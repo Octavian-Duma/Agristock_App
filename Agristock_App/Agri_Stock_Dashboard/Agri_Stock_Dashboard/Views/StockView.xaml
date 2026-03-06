@@ -1,0 +1,125 @@
+﻿<UserControl x:Class="Agri_Stock_Dashboard.Views.StockView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             d:DesignHeight="600" d:DesignWidth="1100"
+             Loaded="UserControl_Loaded">
+
+    <UserControl.Resources>
+        <Style x:Key="EditButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FFB733"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Margin" Value="0,0,5,0"/>
+        </Style>
+
+        <Style x:Key="DeleteButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#EF6661"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="FilterLabel">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,5,0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#555"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Rapoarte Stocuri" FontSize="24" FontWeight="Bold" Margin="0,0,0,20" Foreground="#333"/>
+
+        <Border Grid.Row="1" Background="White" CornerRadius="8" Padding="15" Margin="0,0,0,20" BorderBrush="#E0E0E0" BorderThickness="1">
+            <WrapPanel Orientation="Horizontal">
+                <StackPanel Margin="0,0,20,10">
+                    <TextBlock Text="Căutare Produs" Style="{StaticResource FilterLabel}"/>
+                    <TextBox x:Name="txtStockSearch" Width="180" Padding="5" TextChanged="FilterStock_Changed"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,0,20,10">
+                    <TextBlock Text="Categorie" Style="{StaticResource FilterLabel}"/>
+                    <ComboBox x:Name="comboStockCategory" Width="150" Padding="5" SelectionChanged="FilterStock_Changed"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,0,20,10">
+                    <TextBlock Text="Depozit" Style="{StaticResource FilterLabel}"/>
+                    <ComboBox x:Name="comboStockWarehouse" Width="150" Padding="5" SelectionChanged="FilterStock_Changed" DisplayMemberPath="Name"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,0,10,10">
+                    <TextBlock Text="Min Kg" Style="{StaticResource FilterLabel}" />
+                    <TextBox x:Name="txtMinQty" Width="70" Padding="5" TextChanged="FilterStock_Changed" />
+                </StackPanel>
+
+                <StackPanel Margin="0,0,20,10">
+                    <TextBlock Text="Max Kg" Style="{StaticResource FilterLabel}"/>
+                    <TextBox x:Name="txtMaxQty" Width="70" Padding="5" TextChanged="FilterStock_Changed"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,0,20,10">
+                    <TextBlock Text="Sortare" Style="{StaticResource FilterLabel}"/>
+                    <ComboBox x:Name="comboStockSort" Width="150" Padding="5" SelectionChanged="FilterStock_Changed" SelectedIndex="0">
+                        <ComboBoxItem Content="Nume (A-Z)" Tag="name_asc"/>
+                        <ComboBoxItem Content="Cantitate (Cresc)" Tag="qty_asc"/>
+                        <ComboBoxItem Content="Cantitate (Desc)" Tag="qty_desc"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <Button Content="Șterge Filtre" Background="#757575" Click="btnClearStockFilters_Click" VerticalAlignment="Bottom" Margin="0,0,0,10" Foreground="White" Padding="10,5"/>
+            </WrapPanel>
+        </Border>
+
+        <DataGrid x:Name="gridStockReport" Grid.Row="2" AutoGenerateColumns="False" IsReadOnly="True" RowHeight="35">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Produs" Binding="{Binding Product.Name}" Width="2*"/>
+                <DataGridTextColumn Header="Categorie" Binding="{Binding Product.Category}" Width="150"/>
+                <DataGridTextColumn Header="Locație" Binding="{Binding Warehouse.Name}" Width="200"/>
+                <DataGridTextColumn Header="Cantitate (kg)" Binding="{Binding CurrentQuantityKg}" Width="150" FontWeight="Bold"/>
+
+                <DataGridTemplateColumn Header="Acțiuni" Width="200">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Modifică" Style="{StaticResource EditButtonStyle}" Click="btnEditInventory_Click" Tag="{Binding}"/>
+                                <Button Content="  Șterge  " Style="{StaticResource DeleteButtonStyle}" Click="btnDeleteInventory_Click" Tag="{Binding Id}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Grid x:Name="overlayEditStock" Grid.RowSpan="3" Background="#AA000000" Visibility="Collapsed">
+            <Border Background="White" Width="350" Height="250" CornerRadius="10" Padding="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <StackPanel>
+                    <TextBlock Text="Actualizare Stoc" FontSize="22" FontWeight="Bold" Margin="0,0,0,20" Foreground="#1976D2"/>
+
+                    <TextBlock x:Name="lblEditStockName" Text="Nume Produs" FontSize="16" FontWeight="Bold" Margin="0,0,0,15"/>
+
+                    <TextBlock Text="Cantitate Nouă (kg):" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <TextBox x:Name="txtEditStockQty" Padding="5" FontSize="16"/>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+                        <Button Content="Anulează" Background="#9E9E9E" Foreground="White" Click="btnCancelEditStock_Click" Margin="0,0,10,0" Padding="10,5" BorderThickness="0"/>
+                        <Button Content="Salvează" Background="#1976D2" Foreground="White" Click="btnSaveEditStock_Click" Padding="10,5" BorderThickness="0"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

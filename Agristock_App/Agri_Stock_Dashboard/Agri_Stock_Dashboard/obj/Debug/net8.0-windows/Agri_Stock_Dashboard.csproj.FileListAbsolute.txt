@@ -1,0 +1,88 @@
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\Agri_Stock_Dashboard.exe
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\Agri_Stock_Dashboard.deps.json
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\Agri_Stock_Dashboard.runtimeconfig.json
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\Agri_Stock_Dashboard.dll
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\Agri_Stock_Dashboard.pdb
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\App.g.cs
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard_MarkupCompile.cache
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.g.resources
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.AssemblyInfoInputs.cache
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.AssemblyInfo.cs
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.csproj.CoreCompileInputs.cache
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.dll
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\refint\Agri_Stock_Dashboard.dll
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.pdb
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.genruntimeconfig.cache
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\ref\Agri_Stock_Dashboard.dll
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\System.Net.Http.Json.dll
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.csproj.AssemblyReference.cache
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Sto.346AB6AE.Up2Date
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\AiAssistantView.baml
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\IssuesView.baml
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\LocationsView.baml
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\MachineryView.baml
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\ProductsView.baml
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\StockView.baml
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\AiAssistantView.g.cs
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\IssuesView.g.cs
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\LocationsView.g.cs
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\MachineryView.g.cs
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\ProductsView.g.cs
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\StockView.g.cs
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard_MarkupCompile.lref
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\HomeView.baml
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\HomeView.g.cs
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\InventoryAlertsView.baml
+C:\Facultate\An 4\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\InventoryAlertsView.g.cs
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\Agri_Stock_Dashboard.exe
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\Agri_Stock_Dashboard.deps.json
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\Agri_Stock_Dashboard.runtimeconfig.json
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\Agri_Stock_Dashboard.dll
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\Agri_Stock_Dashboard.pdb
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\System.Net.Http.Json.dll
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.csproj.AssemblyReference.cache
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\AiAssistantView.baml
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\HomeView.baml
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\InventoryAlertsView.baml
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\IssuesView.baml
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\LocationsView.baml
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\MachineryView.baml
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\ProductsView.baml
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\StockView.baml
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\AiAssistantView.g.cs
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\HomeView.g.cs
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\InventoryAlertsView.g.cs
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\IssuesView.g.cs
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\LocationsView.g.cs
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\MachineryView.g.cs
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\ProductsView.g.cs
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Views\StockView.g.cs
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\App.g.cs
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard_MarkupCompile.cache
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard_MarkupCompile.lref
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.g.resources
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.AssemblyInfoInputs.cache
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.AssemblyInfo.cs
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.csproj.CoreCompileInputs.cache
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Sto.346AB6AE.Up2Date
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.dll
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\refint\Agri_Stock_Dashboard.dll
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.pdb
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\Agri_Stock_Dashboard.genruntimeconfig.cache
+C:\Facultate\An 4\Sem 1\SCD\Proiect\Client\Agri_Stock_Dashboard\Agri_Stock_Dashboard\obj\Debug\net8.0-windows\ref\Agri_Stock_Dashboard.dll

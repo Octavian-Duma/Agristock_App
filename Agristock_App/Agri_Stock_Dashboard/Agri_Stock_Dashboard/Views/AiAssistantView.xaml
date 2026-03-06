@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Agri_Stock_Dashboard.Views.AiAssistantView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+
+    <Grid Margin="0,10,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="🤖 AGRI - Asistentul Virtual al fermei lui Neluțu" 
+                   FontSize="22" FontWeight="Bold" Margin="0,0,0,10" Grid.Row="0"/>
+        <TextBox x:Name="txtChatHistory" Grid.Row="1" IsReadOnly="True" 
+                 VerticalScrollBarVisibility="Auto" FontSize="16" Padding="15" 
+                 Background="White" BorderBrush="#DDD" TextWrapping="Wrap"/>
+
+        <Grid Grid.Row="2" Margin="0,15,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="txtChatInput" Padding="10" FontSize="16" 
+                     KeyDown="txtChatInput_KeyDown" VerticalContentAlignment="Center" BorderBrush="#CCC"/>
+
+            <Button x:Name="btnSendAi" Grid.Column="1" Content="Întreabă" Width="120" 
+                    Click="btnSendAi_Click" Background="#2E7D32" Foreground="White" Margin="10,0,0,0"/>
+        </Grid>
+    </Grid>
+</UserControl>

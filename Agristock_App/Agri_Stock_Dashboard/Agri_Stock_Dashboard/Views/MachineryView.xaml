@@ -1,0 +1,127 @@
+﻿<UserControl x:Class="Agri_Stock_Dashboard.Views.MachineryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             d:DesignHeight="700" d:DesignWidth="1100"
+             Loaded="UserControl_Loaded">
+
+    <UserControl.Resources>
+        <Style x:Key="EditButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FFB733"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Margin" Value="0,0,5,0"/>
+        </Style>
+
+        <Style x:Key="DeleteButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#EF6661"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="FilterLabel">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,5,0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#555"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Rapoarte Utilaje" FontSize="24" FontWeight="Bold" Margin="0,0,0,20" Foreground="#333"/>
+
+        <Border Grid.Row="1" Background="White" CornerRadius="8" Padding="15" Margin="0,0,0,20" BorderBrush="#E0E0E0" BorderThickness="1">
+            <WrapPanel Orientation="Horizontal">
+                <StackPanel Margin="0,0,20,10">
+                    <TextBlock Text="Căutare" Style="{StaticResource FilterLabel}"/>
+                    <TextBox x:Name="txtMachinerySearch" Width="200" Padding="5" TextChanged="Filter"/>
+                </StackPanel>
+                <StackPanel Margin="0,0,20,10">
+                    <TextBlock Text="Depozit" Style="{StaticResource FilterLabel}"/>
+                    <ComboBox x:Name="comboMachineryWarehouse" Width="180" Padding="5" SelectionChanged="Filter" DisplayMemberPath="Name"/>
+                </StackPanel>
+                <StackPanel Margin="0,0,20,10">
+                    <TextBlock Text="Status" Style="{StaticResource FilterLabel}"/>
+                    <ComboBox x:Name="comboMachineryStatus" Width="150" Padding="5" SelectionChanged="Filter">
+                        <ComboBoxItem Content="TOATE"/>
+                        <ComboBoxItem Content="FUNCTIONAL"/>
+                        <ComboBoxItem Content="STRICAT"/>
+                        <ComboBoxItem Content="IN_REPARATIE"/>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Margin="0,0,20,10">
+                    <TextBlock Text="Sortare" Style="{StaticResource FilterLabel}"/>
+                    <ComboBox x:Name="comboMachinerySort" Width="150" Padding="5" SelectionChanged="Filter" SelectedIndex="0">
+                        <ComboBoxItem Content="Nume (A-Z)" Tag="name_asc"/>
+                        <ComboBoxItem Content="Locație (A-Z)" Tag="loc_asc"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <Button Content="Șterge Filtre" Background="#757575" Foreground="White" Click="btnClearFilters" VerticalAlignment="Bottom" Margin="0,0,0,10" Padding="10,5"/>
+            </WrapPanel>
+        </Border>
+
+        <DataGrid x:Name="gridMachineryReport" Grid.Row="2" AutoGenerateColumns="False" IsReadOnly="True" RowHeight="35">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nume Utilaj" Binding="{Binding Name}" Width="2*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="150" FontWeight="Bold"/>
+                <DataGridTextColumn Header="Locație" Binding="{Binding Warehouse.Name}" Width="200"/>
+                <DataGridTextColumn Header="Notă / Problemă" Binding="{Binding StatusDescription}" Width="3*"/>
+
+                <DataGridTemplateColumn Header="Acțiuni" Width="200">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Modifică" Style="{StaticResource EditButtonStyle}" Click="btnEdit_Click" Tag="{Binding}"/>
+                                <Button Content="  Șterge  " Style="{StaticResource DeleteButtonStyle}" Click="btnDelete_Click" Tag="{Binding Id}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Grid x:Name="overlayEdit" Grid.RowSpan="3" Background="#AA000000" Visibility="Collapsed">
+            <Border Background="White" Width="400" Height="450" CornerRadius="10" Padding="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <StackPanel>
+                    <TextBlock Text="Editare Utilaj" FontSize="22" FontWeight="Bold" Margin="0,0,0,20" Foreground="#2E7D32"/>
+
+                    <TextBlock Text="Nume:" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <TextBox x:Name="txtEditName" IsReadOnly="True" Background="#F0F0F0" Padding="5" FontSize="14"/>
+
+                    <TextBlock Text="Status:" FontWeight="Bold" Margin="0,15,0,5"/>
+                    <ComboBox x:Name="comboEditStatus" Padding="5" FontSize="14">
+                        <ComboBoxItem Content="FUNCTIONAL"/>
+                        <ComboBoxItem Content="STRICAT"/>
+                        <ComboBoxItem Content="IN_REPARATIE"/>
+                    </ComboBox>
+
+                    <TextBlock Text="Locație:" FontWeight="Bold" Margin="0,15,0,5"/>
+                    <ComboBox x:Name="comboEditMachWarehouse" DisplayMemberPath="Name" Padding="5" FontSize="14"/>
+
+                    <TextBlock Text="Notă / Problemă:" FontWeight="Bold" Margin="0,15,0,5"/>
+                    <TextBox x:Name="txtEditDesc" Height="60" TextWrapping="Wrap" Padding="5" FontSize="14"/>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+                        <Button Content="Anulează" Background="#9E9E9E" Foreground="White" Click="btnCancelEdit_Click" Margin="0,0,10,0" Padding="10,5" BorderThickness="0"/>
+                        <Button Content="Salvează" Background="#4CAF50" Foreground="White" Click="btnSaveEdit_Click" Padding="10,5" BorderThickness="0"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

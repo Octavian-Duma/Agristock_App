@@ -1,0 +1,68 @@
+﻿<Window x:Class="Agri_Stock_Dashboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:views="clr-namespace:Agri_Stock_Dashboard.Views"
+        Title="Agristock Manager - Centru de Comandă" Height="850" Width="1300" 
+        WindowStartupLocation="CenterScreen" Background="#F5F7FA">
+
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="MenuButton">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="Padding" Value="20,12"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Margin" Value="0,2"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#388E3C"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Background="#2E7D32">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="20,30,0,30">
+                    <TextBlock Text="🛖" FontSize="30" Foreground="White" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                    <StackPanel>
+                        <TextBlock Text="AGRISTOCK" Foreground="White" FontSize="24" FontWeight="Bold"/>
+                        <TextBlock Text="Ferma lui Neluțu" Foreground="#A5D6A7" FontSize="12"/>
+                    </StackPanel>
+                </StackPanel>
+
+
+                <Button Content="🏠  Panou management " Style="{StaticResource MenuButton}" Click="Nav_Click" Tag="HomeView"/>
+                <Button Content="📍  Locații" Style="{StaticResource MenuButton}" Click="Nav_Click" Tag="LocationsView"/>
+                <Button Content="🚜  Rapoarte utilaje" Style="{StaticResource MenuButton}" Click="Nav_Click" Tag="MachineryView" />
+                <Button Content="📦  Rapoarte stocuri" Style="{StaticResource MenuButton}" Click="Nav_Click" Tag="StockView" />
+                <Button Content="⚠️  Utilaje cu probleme" Style="{StaticResource MenuButton}" Click="Nav_Click" Tag="IssuesView"/>
+                <Button Content="⚠️  Stocuri la limită" Style="{StaticResource MenuButton}" Click="Nav_Click" Tag="InventoryAlertsView"/>
+                <Button Content="📈  Analiză produse" Style="{StaticResource MenuButton}" Click="Nav_Click" Tag="ProductsView"/>
+                <Button Content="🤖  Asistent AGRI" Style="{StaticResource MenuButton}" Click="Nav_Click" Tag="AiAssistantView"/>
+                
+                <Button Content="🔄  Reîncarcă datele" Style="{StaticResource MenuButton}" Click="Nav_Refresh_Click" Margin="0,40,0,0" Background="#1B5E20"/>
+            </StackPanel>
+        </Border>
+
+        
+        <Grid Grid.Column="1" Margin="20">
+            <views:HomeView x:Name="viewHome" Visibility="Visible"/>
+            <views:LocationsView x:Name="viewLocations" Visibility="Collapsed"/>
+            <views:MachineryView x:Name="viewMachinery" Visibility="Collapsed"/>
+            <views:StockView x:Name="viewStock" Visibility="Collapsed"/>
+            <views:IssuesView x:Name="viewIssues" Visibility="Collapsed"/>
+            <views:InventoryAlertsView x:Name="viewInventoryAlerts" Visibility="Collapsed"/>
+            <views:ProductsView x:Name="viewProducts" Visibility="Collapsed"/>
+            <views:AiAssistantView x:Name="viewAi" Visibility="Collapsed"/>
+        </Grid>
+    </Grid>
+</Window>

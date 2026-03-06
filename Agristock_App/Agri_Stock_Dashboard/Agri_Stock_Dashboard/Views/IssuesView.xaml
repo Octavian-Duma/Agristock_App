@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Agri_Stock_Dashboard.Views.IssuesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             d:DesignHeight="600" d:DesignWidth="1000"
+             Loaded="UserControl_Loaded">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,15" Grid.Row="0">
+            <TextBlock Text=" Utilaje care necesită atenție" FontSize="22" FontWeight="Bold" Foreground="#D32F2F"/>
+        </StackPanel>
+
+        <DataGrid x:Name="gridIssues" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nume" Binding="{Binding Name}" Width="200" FontWeight="Bold"/>
+
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="120">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Foreground" Value="Red"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="Locație" Binding="{Binding Warehouse.Name}" Width="150"/>
+
+                <DataGridTextColumn Header="Problemă/Notă" Binding="{Binding StatusDescription}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
