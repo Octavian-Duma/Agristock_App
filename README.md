@@ -32,7 +32,7 @@ The platform also integrates an AI chat assistant that helps users with farming-
 
 ## System Architecture
 
-![System Architecture](docs/UseCaseDiagram.jpg)
+![System Architecture](Agristock_App/docs/UseCaseDiagram.jpg)
 
 The system is composed of:
 
